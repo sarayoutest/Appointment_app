@@ -47,14 +47,14 @@ export default function Home() {
           <button
             onClick={() =>
               handleLogin({
-                name: "John Doe",
-                picture: "/assets/imag/avatar.png",
-                family_name: "Doe",
+                name: "",
+                picture: "/assets/imag/2.png",
+                family_name: "",
               })
             }
             className="px-4 py-2 bg-blue-600 text-white rounded"
           >
-            تسجيل دخول تجريبي
+            Demo login
           </button>
         </div>
       )}
