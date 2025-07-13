@@ -3,6 +3,14 @@ import "./globals.css";
 import Header from "./_component/Header";
 import Footer from "./_component/Footer";
 import { Toaster } from "../components/ui/sonner"
+import { API_URL } from '@/lib/api'; 
+
+async function getData() {
+  const res = await fetch(`${API_URL}/api/your-endpoint`);
+  const data = await res.json();
+  return data;
+}
+
 
 // const outfit = Outfit({
 
